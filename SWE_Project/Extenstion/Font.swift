@@ -14,3 +14,4 @@ extension Font {
         return Font.custom("EricaOne-Regular", size: size)
     }
 }
+    

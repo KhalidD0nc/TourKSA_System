@@ -12,17 +12,23 @@ import Foundation
 enum AuthError:LocalizedError {
     case customError(message: String)
     case invalidInput
-    case emailNotVerified
+//    case emailNotVerified
     
       
     var errorDescription: String?  {
         switch self {
         case .invalidInput:
             return "Invalid input. Please make sure all fields are filled out correctly."
-        case .emailNotVerified:
-            return "Your email address has not been verified. Please check your inbox."
+//        case .emailNotVerified:
+//            return "Your email address has not been verified. Please check your inbox."
         case .customError(let message):
             return message
         }
     }
 }
+
+
+
+
+
+

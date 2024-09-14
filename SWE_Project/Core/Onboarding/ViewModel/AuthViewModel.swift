@@ -19,16 +19,17 @@ class AuthViewModel: ObservableObject {
         do {
             let authResult = try await UserService.shared.auth.createUser(withEmail: email, password: password)
             let user = authResult.user
-            do {
-                try await user.sendEmailVerification()
-                
-            } catch  {
-                throw AuthError.customError(message: "Failed to send verification email.")
-            }
-            let newUser = UserModel( username: userName, email: email)
+//            do {
+//                try await user.sendEmailVerification()
+//                
+//            } catch  {
+//                throw AuthError.customError(message: "Failed to send verification email.")
+//            }
+            
+            let newUser = UserModel(username: userName, email: email, password: password)
             try UserService.shared.firestore.collection("Users").document(user.uid).setData(from: newUser)
         } catch  {
-            throw AuthError.customError(message: "Failed to create user account.")
+            throw AuthError.customError(message: "Failed to create user account. \(error.localizedDescription)")
         }
     }
     
@@ -40,9 +41,9 @@ class AuthViewModel: ObservableObject {
         do {
             let authResult = try await UserService.shared.auth.signIn(withEmail: email, password: password)
             let user = authResult.user
-            guard user.isEmailVerified else {
-                throw AuthError.emailNotVerified
-            }
+//            guard user.isEmailVerified else {
+//                throw AuthError.emailNotVerified
+//            }
         } catch {
             throw AuthError.customError(message: error.localizedDescription)
         }

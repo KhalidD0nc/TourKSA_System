@@ -15,7 +15,7 @@ struct Spinner: View {
     let lineWidth: CGFloat
     let height: CGFloat
     let width: CGFloat
-    var color1: Color = Color.primaryApp
+    var color1: Color = Color.black
     var color2: Color = .white
 
     @State var spinnerStart: CGFloat = 0.0

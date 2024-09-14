@@ -16,19 +16,16 @@ class UserService: ObservableObject  {
     static let shared = UserService()
     @Published var user: UserModel = .init()
 
-    private var db = Firestore.firestore()
     
     let auth: Auth
     let firestore: Firestore
-    let storage: Storage
+    
     
 
     init() {
         self.auth = Auth.auth()
         self.firestore = Firestore.firestore()
-        self.storage = Storage.storage()
     
-     
     }
 
 
