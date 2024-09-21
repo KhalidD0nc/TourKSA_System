@@ -1,5 +1,206 @@
 [ 
 
+    
+
+    {
+        "Place Name": "La Casa Pasta",
+        "description": "La Casta Pasta is an Italian restaurant located in Jeddah, Saudi Arabia, known for its delicious pasta dishes and Italian cuisine.",
+        "Location": {
+            "long": 39.155613,
+            "lat": 21.632377
+        },
+        "images": [
+            "https://welcomesaudi.com/uploads/0000/64/2021/11/07/1-la-casa-pasta-makkah-900.jpg",
+            "https://welcomesaudi.com/uploads/0000/64/2022/07/21/1-la-casa-pasta-khobar.jpg",
+            "https://www.mat3am.net/assets/2017/11/27/jpg/eeebc894-153d-4f80-93b1-1ae8ba3bba12.jpg"
+        ],
+        "visit time": "11:30 AM–11:30 PM",
+        "place type": "Restaurant",
+        "rate": 4,
+        "City": "Jeddah",
+        "price": 100
+    },
+    {
+        "Place Name": "Shrimp Anatomy",
+        "description": "Shrimpy Anatomy Restaurant was designed with distinctive glass facades with different places where there are tables...",
+        "Location": {
+            "long": 39.139684,
+            "lat": 21.573057
+        },
+        "images": [
+            "https://jeddahnight.com/wp-content/uploads/2019/08/Shrimp-Anatomy-Jeddah.jpg-1.jpg",
+            "https://welcomesaudi.com/uploads/0000/64/2021/09/11/1-shrimp-anatomy-restaurant-madinah-900.jpg",
+            "https://menuegypt.com/restaurants_menus/shrimp-anatomy_menu_1.jpg"
+        ],
+        "visit time": "12 PM–1 AM",
+        "place type": "Restaurant",
+        "rate": 4.2,
+        "City": "Jeddah",
+        "price": 150
+    },
+    {
+        "Place Name": "Al Nafoura restaurant",
+        "description": "Nafoura is a top restaurant in Jeddah, offering International and Middle Eastern dishes with a terrace overlooking the Red Sea.",
+        "Location": {
+            "long": 39.154770,
+            "lat": 21.513980
+        },
+        "images": [
+            "https://thefoodescape.com/wp-content/uploads/2017/06/DSC_0608.jpg",
+            "https://www.hyattrestaurants.com/uploaded/restaurant_banners/cover_restaurant_banner-1588870703.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHJoYYg-W259XL5b_OQCWsu7D7I9oWwRuWg&s"
+        ],
+        "visit time": "6:30 AM–12 AM",
+        "place type": "Restaurant",
+        "rate": 4.1,
+        "City": "Jeddah",
+        "price": 200
+    },
+    {
+        "Place Name": "Rosewood Jeddah",
+        "description": "Jeddah is unique in its ability to combine the two extremes in perfect harmony.",
+        "Location": {
+            "long": 39.109957,
+            "lat": 21.576592
+        },
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/62854869.jpg",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/85704898.jpg"
+        ],
+        "visit time": "All time",
+        "place type": "Hotel",
+        "rate": 4.5,
+        "City": "Jeddah",
+        "price": 500
+    },
+    {
+        "Place Name": "Ritz Carlton Jeddah",
+        "description": "The Ritz-Carlton in Jeddah is a luxurious hotel...",
+        "Location": {
+            "long": 39.151764,
+            "lat": 21.524777
+        },
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/597000969.jpg"
+        ],
+        "visit time": "All time",
+        "place type": "Hotel",
+        "rate": 4.6,
+        "City": "Jeddah",
+        "price": 600
+    },
+    {
+        "Place Name": "InterContinental Jeddah",
+        "description": "Witness the Spectacle of the World's Largest Fountain...",
+        "Location": {
+            "long": 39.155864,
+            "lat": 21.515542
+        },
+        "images": [
+            "https://digital.ihg.com/is/image/ihg/intercontinental-jeddah-6189635494-16x9?"
+        ],
+        "visit time": "All time",
+        "place type": "Hotel",
+        "rate": 4.4,
+        "City": "Jeddah",
+        "price": 550
+    },
+    {
+        "Place Name": "Jeddah Sculptures Museum",
+        "description": "Several prominent sculptures in Jeddah endured extensive damage...",
+        "Location": {
+            "long": 39.106156,
+            "lat": 21.597348
+        },
+        "images": [
+            "http://www.sculpturesofjeddah.com/assets/images/77/s_web_10__small.jpg"
+        ],
+        "visit time": "All time",
+        "place type": "Museums",
+        "rate": 4.4,
+        "City": "Jeddah",
+        "price": 0
+    },
+    {
+        "Place Name": "Nassif House Museum",
+        "description": "Located in the Old Town of Jeddah...",
+        "Location": {
+            "long": 39.187491,
+            "lat": 21.484113
+        },
+        "images": [
+            "https://media1.thrillophilia.com/filestore/ulaw38yi2gtqv3jcslls1s666uyq_2020-03-07.jpg"
+        ],
+        "visit time": "8 AM–11:55 PM",
+        "place type": "Museums",
+        "rate": 4.4,
+        "City": "Jeddah",
+        "price": 0
+    },
+    {
+        "Place Name": "Khuzam Palace Museum",
+        "description": "The Museum is in the historic Khuzam Palace...",
+        "Location": {
+            "long": 39.206793,
+            "lat": 21.474058
+        },
+        "images": [
+            "https://lh4.googleusercontent.com/proxy/LzzZ--1pYYsc5lLnDZOs8DKyMrA5btVHVUqPc8E1LNeDfWl-KIa5PFygmioyQWtpodpLh4UWWb7zCbnk_w0Y6EopAdMMoUHqVbSW6I_DQlVcRd29X4vL2Bqz_9FmVqlSGid96az6sK0K6q5VP20-oY3K9Yh0zHdju0lkDH-i1Q"
+        ],
+        "visit time": "10 AM–10 PM",
+        "place type": "Museums",
+        "rate": 4.3,
+        "City": "Jeddah",
+        "price": 0
+    },
+    {
+        "Place Name": "Jeddah Corniche",
+        "description": "Jeddah Corniche is a beautiful waterfront...",
+        "Location": {
+            "long": 39.107696,
+            "lat": 21.602145
+        },
+        "images": [
+            "https://i.pinimg.com/564x/cf/2a/ed/cf2aed32d073c3e9e8c311b042292459.jpg"
+        ],
+        "visit time": "AM&PM",
+        "place type": "Entertainment",
+        "rate": 4.6,
+        "City": "Jeddah",
+        "price": 0
+    },
+    {
+        "Place Name": "Fakieh Aquarium",
+        "description": "Located just off Al Kurnaysh Road...",
+        "Location": {
+            "long": 39.109775,
+            "lat": 21.572055
+        },
+        "images": [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/84/cf/f3/fakieh-aquarium.jpg?w=1200&h=-1&s=1"
+        ],
+        "visit time": "10 AM–11 PM",
+        "place type": "Entertainment",
+        "rate": 4.1,
+        "City": "Jeddah",
+        "price": 120
+    },
+    {
+        "Place Name": "Al Shallal Theme Park",
+        "description": "Since its establishment in 1998...",
+        "Location": {
+            "long": 39.111304,
+            "lat": 21.568843
+        },
+        "images": [
+            "https://www.cuddlynest.com/blog/wp-content/uploads/2024/03/al_shallal_theme_park.jpeg"
+        ],
+        "visit time": "04:30 PM to 1:30 AM",
+        "place type": "Entertainment",
+        "rate": 4.1,
+        "City": "Jeddah",
+        "price": 80
+    }  , 
     { 
 
         "Place Name": "La Casa Pasta", 
@@ -439,6 +640,7 @@
         "City": "Jeddah" 
 
     } , 
+
 
   {
     "place_name": "Al Romansiah Restaurants",
