@@ -133,7 +133,7 @@ struct SignUpView: View {
                                    .font(.ericaOne(size: 24))
                                    .padding()
                                    .frame(width: isInprogress ? 80 : 340)
-                                   .background(Color("ButtonColor"))
+                                   .background(Color.greenApp)
                                    .cornerRadius(40)
                            }
                            .padding(.bottom, 10)

@@ -11,6 +11,15 @@
 		AD39BFDA2C8D9DED00EDFF30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD39BFD92C8D9DED00EDFF30 /* Assets.xcassets */; };
 		AD39BFDD2C8D9DED00EDFF30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD39BFDC2C8D9DED00EDFF30 /* Preview Assets.xcassets */; };
 		AD6EBFC32C91DE6600390F71 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EBFC22C91DE6600390F71 /* Spinner.swift */; };
+		AD99A4B12C9EE7C200DDB640 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4B02C9EE7C200DDB640 /* PlaceModel.swift */; };
+		AD99A4BA2CA044A400DDB640 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4B92CA044A400DDB640 /* TabViewModel.swift */; };
+		AD99A4BC2CA05D3700DDB640 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4BB2CA05D3600DDB640 /* ContainerView.swift */; };
+		AD99A4BE2CA0614A00DDB640 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4BD2CA0614A00DDB640 /* Color.swift */; };
+		AD99A4C32CA062FB00DDB640 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C22CA062FB00DDB640 /* HomeView.swift */; };
+		AD99A4C52CA17B0000DDB640 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C42CA17B0000DDB640 /* WeatherModel.swift */; };
+		AD99A4C72CA17B1300DDB640 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C62CA17B1300DDB640 /* WeatherService.swift */; };
+		AD99A4C92CA17B5F00DDB640 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */; };
+		AD99A4CD2CA1878900DDB640 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99A4CC2CA1878900DDB640 /* Data.json */; };
 		ADE8D67B2C8F52950037A2C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */; };
 		ADE8D67E2C8F54140037A2C5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D67D2C8F54140037A2C5 /* FirebaseAnalytics */; };
 		ADE8D6802C8F54140037A2C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D67F2C8F54140037A2C5 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -49,6 +58,15 @@
 		AD39BFD92C8D9DED00EDFF30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD39BFDC2C8D9DED00EDFF30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD6EBFC22C91DE6600390F71 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		AD99A4B02C9EE7C200DDB640 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		AD99A4B92CA044A400DDB640 /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		AD99A4BB2CA05D3600DDB640 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		AD99A4BD2CA0614A00DDB640 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AD99A4C22CA062FB00DDB640 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD99A4C42CA17B0000DDB640 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		AD99A4C62CA17B1300DDB640 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		AD99A4CC2CA1878900DDB640 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADE8D6A52C8F54320037A2C5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		ADE8D6A82C8F59AA0037A2C5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -141,10 +159,83 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		AD99A4B22CA043E500DDB640 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD99A4B72CA0440600DDB640 /* ViewModel */,
+				AD99A4B62CA0440300DDB640 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD99A4B32CA043F300DDB640 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		AD99A4B42CA043F700DDB640 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		AD99A4B52CA043FA00DDB640 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AD99A4B62CA0440300DDB640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD99A4C22CA062FB00DDB640 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD99A4B72CA0440600DDB640 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD99A4BF2CA062D900DDB640 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				AD99A4C12CA062E500DDB640 /* View */,
+				AD99A4BB2CA05D3600DDB640 /* ContainerView.swift */,
+				AD99A4C02CA062DF00DDB640 /* ViewModel */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		AD99A4C02CA062DF00DDB640 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD99A4B92CA044A400DDB640 /* TabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD99A4C12CA062E500DDB640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ADE8D6A72C8F59980037A2C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				ADE8D6A52C8F54320037A2C5 /* UserModel.swift */,
+				AD99A4B02C9EE7C200DDB640 /* PlaceModel.swift */,
+				AD99A4C42CA17B0000DDB640 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +243,11 @@
 		ADE8D6AF2C8F668F0037A2C5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AD99A4BF2CA062D900DDB640 /* Container */,
+				AD99A4B52CA043FA00DDB640 /* Settings */,
+				AD99A4B42CA043F700DDB640 /* Map */,
+				AD99A4B32CA043F300DDB640 /* Save */,
+				AD99A4B22CA043E500DDB640 /* Home */,
 				AD6EBFC42C91DE6800390F71 /* Component */,
 				ADE8D6B02C8F66980037A2C5 /* Onboarding */,
 			);
@@ -190,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE8D6B62C8F67700037A2C5 /* UserService .swift */,
+				AD99A4C62CA17B1300DDB640 /* WeatherService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,6 +294,7 @@
 		ADE8D6BE2C8F6A9A0037A2C5 /* Outsource */ = {
 			isa = PBXGroup;
 			children = (
+				AD99A4CC2CA1878900DDB640 /* Data.json */,
 				ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */,
 				ADE8D6AA2C8F5AA80037A2C5 /* EricaOne-Regular.ttf */,
 			);
@@ -207,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE8D6AD2C8F5B040037A2C5 /* Font.swift */,
+				AD99A4BD2CA0614A00DDB640 /* Color.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -294,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD99A4CD2CA1878900DDB640 /* Data.json in Resources */,
 				AD39BFDD2C8D9DED00EDFF30 /* Preview Assets.xcassets in Resources */,
 				ADE8D6AB2C8F5AA80037A2C5 /* EricaOne-Regular.ttf in Resources */,
 				ADE8D67B2C8F52950037A2C5 /* GoogleService-Info.plist in Resources */,
@@ -309,14 +409,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6EBFC32C91DE6600390F71 /* Spinner.swift in Sources */,
+				AD99A4C92CA17B5F00DDB640 /* WeatherViewModel.swift in Sources */,
 				ADE8D6B82C8F67700037A2C5 /* UserService .swift in Sources */,
 				ADE8D6B22C8F67270037A2C5 /* SignInView.swift in Sources */,
+				AD99A4C32CA062FB00DDB640 /* HomeView.swift in Sources */,
 				ADE8D6A92C8F59AA0037A2C5 /* OnboardingView.swift in Sources */,
+				AD99A4BA2CA044A400DDB640 /* TabViewModel.swift in Sources */,
 				ADE8D6BA2C8F67E50037A2C5 /* AuthError.swift in Sources */,
 				ADE8D6B42C8F67310037A2C5 /* SignUpView.swift in Sources */,
 				ADE8D6B72C8F67700037A2C5 /* AuthViewModel.swift in Sources */,
+				AD99A4B12C9EE7C200DDB640 /* PlaceModel.swift in Sources */,
+				AD99A4BE2CA0614A00DDB640 /* Color.swift in Sources */,
 				ADE8D6AE2C8F5B040037A2C5 /* Font.swift in Sources */,
+				AD99A4BC2CA05D3700DDB640 /* ContainerView.swift in Sources */,
 				ADE8D6A62C8F54320037A2C5 /* UserModel.swift in Sources */,
+				AD99A4C72CA17B1300DDB640 /* WeatherService.swift in Sources */,
+				AD99A4C52CA17B0000DDB640 /* WeatherModel.swift in Sources */,
 				AD39BFD62C8D9DEB00EDFF30 /* SWE_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,9 +575,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.SWE-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -497,9 +609,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.SWE-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
