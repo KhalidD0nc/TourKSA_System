@@ -4,36 +4,43 @@
 //
 //  Created by Khalid R on 19/03/1446 AH.
 //
-
 import SwiftUI
 
 struct ContainerView: View {
     @State private var selectedTab: TabViewModel = .home
+    
     var body: some View {
-        VStack  {
+        ZStack(alignment: .bottom) {
             TabView(selection: $selectedTab) {
-                Text("HomeView")
+                HomeView()
                     .tag(TabViewModel.home)
+                    .ignoresSafeArea()
+                
                 Text("Saved View")
                     .tag(TabViewModel.saved)
+                    .ignoresSafeArea()
+                
                 Text("Map View")
                     .tag(TabViewModel.map)
+                    .ignoresSafeArea()
+                
                 Text("Settings View")
                     .tag(TabViewModel.settings)
+                    .ignoresSafeArea()
             }
+            .background(Color.white.ignoresSafeArea())
+            
             customBarItem
-        
+                .background(Color.white)
+                .frame(height: 85)
+                .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: -5)
         }
-       
+        .ignoresSafeArea(edges: .bottom)
+        .navigationBarBackButtonHidden()
     }
 }
 
-#Preview {
-    ContainerView()
-}
-
 struct NewTabItem: View  {
-  
     var tab: TabViewModel = .home
     @Binding var activeTab: TabViewModel
     var body: some View {
@@ -41,20 +48,13 @@ struct NewTabItem: View  {
             Image(activeTab == tab ? tab.tabedImages : tab.image)
                 .resizable()
                 .frame(width: (activeTab == tab) ? 30 : 30, height: (activeTab == tab) ? 30 : 30)
-                Circle()
-                .fill(Color.greenApp)
+            
+            Circle()
+                .fill(activeTab == tab ? Color.greenApp : .clear)
                 .frame(width: 10, height: 10)
-                
-        
-             
-               
-                 
-      
         }
         .frame(maxWidth: .infinity)
         .contentShape(Rectangle())
-        
-        
         .onTapGesture {
             withAnimation(.spring(duration: 0.4)) {
                 activeTab = tab
@@ -62,8 +62,11 @@ struct NewTabItem: View  {
             
         }
     }
-    
 }
+#Preview(body: {
+    ContainerView()
+})
+
 extension ContainerView  {
     private var customBarItem: some View {
         HStack(alignment: .bottom) {
@@ -71,8 +74,7 @@ extension ContainerView  {
                 NewTabItem(tab: $0, activeTab: $selectedTab)
             }
         }
-        
+        .padding(.vertical, 10) 
     }
-
 }
 

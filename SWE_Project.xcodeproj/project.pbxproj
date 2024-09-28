@@ -19,7 +19,10 @@
 		AD99A4C52CA17B0000DDB640 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C42CA17B0000DDB640 /* WeatherModel.swift */; };
 		AD99A4C72CA17B1300DDB640 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C62CA17B1300DDB640 /* WeatherService.swift */; };
 		AD99A4C92CA17B5F00DDB640 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */; };
-		AD99A4CD2CA1878900DDB640 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99A4CC2CA1878900DDB640 /* Data.json */; };
+		AD99A4CF2CA18F9400DDB640 /* PlaceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4CE2CA18F9400DDB640 /* PlaceCardView.swift */; };
+		AD99A4D52CA81DE300DDB640 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4D42CA81DE300DDB640 /* PlaceService.swift */; };
+		AD99A4D72CA81DF900DDB640 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99A4D62CA81DF900DDB640 /* PlaceViewModel.swift */; };
+		AD99A4D92CA82CB500DDB640 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99A4D82CA82CB500DDB640 /* Data.json */; };
 		ADE8D67B2C8F52950037A2C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */; };
 		ADE8D67E2C8F54140037A2C5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D67D2C8F54140037A2C5 /* FirebaseAnalytics */; };
 		ADE8D6802C8F54140037A2C5 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D67F2C8F54140037A2C5 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -66,7 +69,10 @@
 		AD99A4C42CA17B0000DDB640 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		AD99A4C62CA17B1300DDB640 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		AD99A4CC2CA1878900DDB640 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		AD99A4CE2CA18F9400DDB640 /* PlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardView.swift; sourceTree = "<group>"; };
+		AD99A4D42CA81DE300DDB640 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
+		AD99A4D62CA81DF900DDB640 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		AD99A4D82CA82CB500DDB640 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADE8D6A52C8F54320037A2C5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		ADE8D6A82C8F59AA0037A2C5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AD6EBFC22C91DE6600390F71 /* Spinner.swift */,
+				AD99A4CE2CA18F9400DDB640 /* PlaceCardView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				AD99A4C82CA17B5F00DDB640 /* WeatherViewModel.swift */,
+				AD99A4D62CA81DF900DDB640 /* PlaceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			children = (
 				ADE8D6B62C8F67700037A2C5 /* UserService .swift */,
 				AD99A4C62CA17B1300DDB640 /* WeatherService.swift */,
+				AD99A4D42CA81DE300DDB640 /* PlaceService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -294,7 +303,7 @@
 		ADE8D6BE2C8F6A9A0037A2C5 /* Outsource */ = {
 			isa = PBXGroup;
 			children = (
-				AD99A4CC2CA1878900DDB640 /* Data.json */,
+				AD99A4D82CA82CB500DDB640 /* Data.json */,
 				ADE8D67A2C8F52950037A2C5 /* GoogleService-Info.plist */,
 				ADE8D6AA2C8F5AA80037A2C5 /* EricaOne-Regular.ttf */,
 			);
@@ -393,7 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD99A4CD2CA1878900DDB640 /* Data.json in Resources */,
+				AD99A4D92CA82CB500DDB640 /* Data.json in Resources */,
 				AD39BFDD2C8D9DED00EDFF30 /* Preview Assets.xcassets in Resources */,
 				ADE8D6AB2C8F5AA80037A2C5 /* EricaOne-Regular.ttf in Resources */,
 				ADE8D67B2C8F52950037A2C5 /* GoogleService-Info.plist in Resources */,
@@ -409,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6EBFC32C91DE6600390F71 /* Spinner.swift in Sources */,
+				AD99A4D52CA81DE300DDB640 /* PlaceService.swift in Sources */,
 				AD99A4C92CA17B5F00DDB640 /* WeatherViewModel.swift in Sources */,
 				ADE8D6B82C8F67700037A2C5 /* UserService .swift in Sources */,
 				ADE8D6B22C8F67270037A2C5 /* SignInView.swift in Sources */,
@@ -420,6 +430,8 @@
 				ADE8D6B72C8F67700037A2C5 /* AuthViewModel.swift in Sources */,
 				AD99A4B12C9EE7C200DDB640 /* PlaceModel.swift in Sources */,
 				AD99A4BE2CA0614A00DDB640 /* Color.swift in Sources */,
+				AD99A4D72CA81DF900DDB640 /* PlaceViewModel.swift in Sources */,
+				AD99A4CF2CA18F9400DDB640 /* PlaceCardView.swift in Sources */,
 				ADE8D6AE2C8F5B040037A2C5 /* Font.swift in Sources */,
 				AD99A4BC2CA05D3700DDB640 /* ContainerView.swift in Sources */,
 				ADE8D6A62C8F54320037A2C5 /* UserModel.swift in Sources */,
