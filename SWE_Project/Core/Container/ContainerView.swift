@@ -16,15 +16,15 @@ struct ContainerView: View {
                     .tag(TabViewModel.home)
                     .ignoresSafeArea()
                 
-                Text("Saved View")
+               JourneyView()
                     .tag(TabViewModel.saved)
                     .ignoresSafeArea()
                 
-                Text("Map View")
+                MapView()
                     .tag(TabViewModel.map)
                     .ignoresSafeArea()
                 
-                Text("Settings View")
+                ProfileView()
                     .tag(TabViewModel.settings)
                     .ignoresSafeArea()
             }
@@ -65,6 +65,7 @@ struct NewTabItem: View  {
 }
 #Preview(body: {
     ContainerView()
+        .environmentObject(PlaceViewModel())
 })
 
 extension ContainerView  {

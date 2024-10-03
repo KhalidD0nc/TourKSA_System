@@ -14,11 +14,7 @@ struct UserModel: Codable {
     var username : String = ""
     var email: String = ""
     var password: String = ""
-    
-    // Bookmarks
-    //
-    //
-    //
-    
-    // test 
+    var bookmarks: [PlaceModel] = []
+    var reservations: [PlaceModel] = []
+
 }

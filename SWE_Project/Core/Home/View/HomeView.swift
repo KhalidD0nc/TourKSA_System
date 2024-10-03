@@ -9,9 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var weatherViewModel = WeatherViewModel()
-    @StateObject var placeViewModel = PlaceViewModel()
+    @EnvironmentObject var placeViewModel : PlaceViewModel
     @State private var showDropDown = false
-    
+//    @State var selectedPlace: PlaceModel
 
 
     
@@ -69,7 +69,7 @@ struct HomeView: View {
                                 LazyVStack(alignment: .leading) {
                                     ForEach($placeViewModel.places) { $place in
                                         NavigationLink {
-                                            
+                                            PlaceDetailView(place: $place)
                                         } label: {
                                             
                                             
@@ -131,6 +131,7 @@ struct HomeView: View {
 }
 #Preview {
     ContainerView()
+        .environmentObject(PlaceViewModel())
 }
 
 extension HomeView {

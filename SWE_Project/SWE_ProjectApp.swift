@@ -22,11 +22,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SWE_ProjectApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @StateObject var vm = PlaceViewModel()
     var body: some Scene {
         WindowGroup {
             OnboardingView()
                 .preferredColorScheme(.light)
+                .environmentObject(vm)
         }
     }
 }

@@ -12,12 +12,14 @@ class PlaceViewModel: ObservableObject {
     @Published var selectedCategory: Category = .popular
     @Published var selectedCity: City = .riyadh
     @Published var searchText: String = ""
-    
+    @Published var planPlaces: [PlaceModel] = []
+    @Published var selectedPlan: Int = 1
     private var placeService = PlaceService()
     private var cancellables = Set<AnyCancellable>()
     private var allPlaces: [PlaceModel] = []  // All loaded places
 
     init() {
+  
         addSubscribers()
     }
 
@@ -64,6 +66,39 @@ class PlaceViewModel: ObservableObject {
         
         places = filteredPlaces
     }
+    
+    func placesForPlan(plan: Int) -> [PlaceModel] {
+        // Return places based on the selected plan
+        var filteredPlaces = places.shuffled() // Shuffle places
+        let firstHotel = filteredPlaces.first(where: { $0.type == .hotel })
+        filteredPlaces.removeAll(where: { $0.type == .hotel })
+        
+        // Ensure first place is hotel, and then other places follow
+        var planPlaces: [PlaceModel] = []
+        if let hotel = firstHotel {
+            planPlaces.append(hotel)
+        }
+        planPlaces.append(contentsOf: filteredPlaces.prefix(3))
+        return planPlaces
+    }
+    
+    func fillPlacesForPlan(plan: Int) {
+
+        var filteredPlaces = places.shuffled()
+        
+
+        let firstHotel = filteredPlaces.first(where: { $0.type == .hotel })
+        filteredPlaces.removeAll(where: { $0.type == .hotel })
+        
+
+        planPlaces = []
+        if let hotel = firstHotel {
+            planPlaces.append(hotel)
+        }
+        
+        planPlaces.append(contentsOf: filteredPlaces.prefix(3))
+    }
+    
 }
 
 enum Category: String, CaseIterable {

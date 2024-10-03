@@ -81,4 +81,15 @@ enum PlaceType: String {
         case .entertainment: return "Entertainment"
         }
     }
+    var imageName: String {
+        switch self {
+        case .restaurant: return "Restaurant"
+        case .hotel: return "Hotel"
+        case .museum: return "Museum"
+        case .entertainment: return "Entertainment"
+        }
+    }
+    
+    
+    
 }

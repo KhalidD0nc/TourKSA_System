@@ -428,11 +428,11 @@
         "city": "Riyadh",
         "price": 1000,
         "images": [
+            "https://al-faisaliah-hotel-riyadh.booked.net/data/Photos/OriginalPhoto/16002/1600218/1600218060/Mandarin-Oriental-Al-Faisaliah-Riyadh-Exterior.JPEG",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/578501581.jpg",
             "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/39/d7/49/al-faisaliah-hotel-a.jpg",
             "https://www.remotelands.com/storage/media/5893/conversions/b220616003-banner-size.jpg",
-            "https://www.remotelands.com/remotenew1/dist/images/hotel/accoms/220616001-648474-.jpg",
-            "https://al-faisaliah-hotel-riyadh.booked.net/data/Photos/OriginalPhoto/16002/1600218/1600218060/Mandarin-Oriental-Al-Faisaliah-Riyadh-Exterior.JPEG"
+            "https://www.remotelands.com/remotenew1/dist/images/hotel/accoms/220616001-648474-.jpg"
         ]
     },
     {
@@ -504,8 +504,9 @@
         "city": "Riyadh",
         "price": 0,
         "images": [
-            "https://www.visitsaudi.com/content/dam/wvs/destinations/riyadh/al-masmk.jpg",
-            "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/media/28/02/2013/p5a_0.jpg?itok=3szsa5RX"
+            "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/media/28/02/2013/p5a_0.jpg?itok=3szsa5RX",
+            "https://www.visitsaudi.com/content/dam/wvs/destinations/riyadh/al-masmk.jpg"
+         
         ]
     },
     {
@@ -880,7 +881,7 @@
             "long": 24.781694933298496,
             "lat": 46.72971551200867
         },
-        "visit_time": "N/A",
+        "visit_time": "All Time",
         "place_type": "Restaurant",
         "rate": 4.0,
         "city": "Riyadh",

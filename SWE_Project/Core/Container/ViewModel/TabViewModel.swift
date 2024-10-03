@@ -18,7 +18,7 @@ enum TabViewModel: String, CaseIterable {
         case .home:
             return "Home"
         case .saved:
-            return "Save"
+            return "J"
         case .map:
            return  "Map"
         case .settings:
@@ -30,7 +30,7 @@ enum TabViewModel: String, CaseIterable {
         case .home:
             return "HomeT"
         case .saved:
-            return "SaveT"
+            return "JT"
         case .map:
            return  "MapT"
         case .settings:
