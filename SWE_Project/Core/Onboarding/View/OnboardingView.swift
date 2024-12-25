@@ -82,7 +82,9 @@ struct OnboardingView: View {
             }
             .navigationDestination(isPresented: $showSignUpView) {
                 SignUpView()
+                
         }
+            .navigationBarBackButtonHidden()
         }
     }
 }

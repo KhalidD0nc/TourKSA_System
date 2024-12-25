@@ -19,6 +19,7 @@ class PlaceModel: Codable, Identifiable {
     var typeRaw: String?
     var cityRaw: String?
     var location: Location
+    var number:String? = nil
     
     
     var type: PlaceType? {

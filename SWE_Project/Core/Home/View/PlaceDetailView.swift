@@ -14,6 +14,7 @@ struct PlaceDetailView: View {
     @ObservedObject var userViewModel = UserOprtionViewModel()
     @State var existed: Bool = false
     @State var existedR: Bool = false
+    @State var readMore: Bool = false
     @Binding var place: PlaceModel
     var body: some View {
       
@@ -34,8 +35,7 @@ struct PlaceDetailView: View {
                             .frame(width: 380, height: 400)
                     }
                 }
-                
-                
+          
                 HStack(spacing: 20) {
                     
                     Button {
@@ -63,79 +63,99 @@ struct PlaceDetailView: View {
             .frame(width: 343, height: 390)
             .padding(.all, 20)
             .cornerRadius(40)
-            
-            HStack {
-                VStack(alignment: .leading, spacing: 10){
-                    Text(place.type?.title ?? "")
-                        .font(.ericaOne(size: 16))
-                    Text(place.name ?? "")
-                        .font(.ericaOne(size: 12))
-                        .foregroundStyle(.gray)
-                }
-                Spacer()
+            ScrollView(showsIndicators: false) {
                 HStack {
-                    Text("\(place.rate ?? 0.0, format: .number)")
-                    Image(systemName: "star.fill")
-                        .foregroundStyle(.yellow)
+                    VStack(alignment: .leading, spacing: 10){
+                        Text(place.type?.title ?? "")
+                            .font(.ericaOne(size: 16))
+                        Text(place.name ?? "")
+                            .font(.ericaOne(size: 12))
+                            .foregroundStyle(.gray)
+                    }
+                    Spacer()
+                    HStack {
+                        Text("\(place.rate ?? 0.0, format: .number)")
+                        Image(systemName: "star.fill")
+                            .foregroundStyle(.yellow)
+                    }
                 }
-            }
-            .padding(.horizontal)
-            
-            Text(place.description ?? "")
-                .font(.ericaOne(size: 14))
-                .foregroundStyle(.gray)
-                .padding(.top)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    
-                    ForEach(place.images ?? [], id: \.self) { imageUrlString in
-                        if let url = URL(string: imageUrlString) {
-                            AsyncImage(url: url) { image in
-                                image
+                .padding(.horizontal)
+                
+                VStack(alignment: .leading) {
+                    Text(place.description ?? "")
+                        .lineLimit(readMore ? nil : 2)
+                        .font(.ericaOne(size: 14))
+                        .foregroundColor(Color.gray)
+
+                    Button(action: {
+                        withAnimation(.spring) {
+                            readMore.toggle()
+                        }
+                    }, label: {
+                        Text(readMore ? "Less" : "Read more..")
+                            .font(.ericaOne(size: 12))
+                            .padding(.vertical, 4)
+                    })
+                    .accentColor(.blue)
+                    .padding(.leading, 5)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 3)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        
+                        ForEach(place.images ?? [], id: \.self) { imageUrlString in
+                            if let url = URL(string: imageUrlString) {
+                                AsyncImage(url: url) { image in
+                                    image
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 84, height: 68)
+                                        .cornerRadius(16)
+                                } placeholder: {
+                                    
+                                    ProgressView()
+                                        .frame(width: 84, height: 68)
+                                }
+                            } else {
+                                
+                                Image(systemName: "photo")
                                     .resizable()
-                                    .aspectRatio(contentMode: .fill)
                                     .frame(width: 84, height: 68)
                                     .cornerRadius(16)
-                            } placeholder: {
-                                
-                                ProgressView()
-                                    .frame(width: 84, height: 68)
+                                    .foregroundColor(.gray)
                             }
-                        } else {
-                            
-                            Image(systemName: "photo")
-                                .resizable()
-                                .frame(width: 84, height: 68)
-                                .cornerRadius(16)
-                                .foregroundColor(.gray)
                         }
+                        .padding()
                     }
-                    .padding()
                 }
             }
-
+            .frame(height: UIScreen.main.bounds.height / 3.3)
             
-            HStack {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("Price")
-                    
-                    if let price = place.price {
-                        if price > 0 {
-                            Text("\(price, specifier: "%.2f")\(priceSuffix(for: place))")
-                                .foregroundStyle(Color.greenApp)
-                                .font(.ericaOne(size: 16))
-                        } else {
-                            Text("Free")
-                                .foregroundStyle(Color.greenApp)
-                                .font(.ericaOne(size: 16))
-                        }
-                    } else {
-                        Text("Contact for pricing")
-                            .foregroundStyle(Color.gray)
-                            .font(.ericaOne(size: 14))
-                    }
+                HStack {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Price")
                         
-                }
+                        if let price = place.price {
+                            if price > 0 {
+                                Text("\(price, specifier: "%.2f")\(priceSuffix(for: place))")
+                                    .foregroundStyle(Color.greenApp)
+                                    .font(.ericaOne(size: 16))
+                            } else {
+                                Text("Free")
+                                    .foregroundStyle(Color.greenApp)
+                                    .font(.ericaOne(size: 16))
+                            }
+                        } else {
+                            Text("Contact for pricing")
+                                .foregroundStyle(Color.gray)
+                                .font(.ericaOne(size: 14))
+                        }
+                        
+                    }
+                    .padding(.horizontal)
+            
                 Spacer()
                 Button(action: {
                     userViewModel.bookPlace(place: place)
@@ -150,8 +170,7 @@ struct PlaceDetailView: View {
                         .cornerRadius(25)
                 })
             }
-            .padding()
-            .padding(.top)
+         
             .navigationBarBackButtonHidden()
         }
         .onAppear {
@@ -180,9 +199,10 @@ struct PlaceDetailView: View {
     }
 }
 
-//#Preview {
-//    PlaceDetailView()
-//}
+#Preview {
+    ContainerView()
+        .environmentObject(PlaceViewModel())
+}
 
 
 extension PlaceDetailView {

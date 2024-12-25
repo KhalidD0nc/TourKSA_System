@@ -36,7 +36,7 @@ struct SignInView: View {
                         Spacer()
                     }
                     .padding(.leading)
-                    Text("Create account with easy and fast")
+                    Text("Helo, welcome back to your account.")
                         .foregroundStyle(.white)
                         .bold()
                         .padding(.leading, 35)

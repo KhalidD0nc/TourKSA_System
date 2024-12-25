@@ -103,6 +103,11 @@ class UserOprtionViewModel: ObservableObject {
         guard let userID = UserService.shared.auth.currentUser?.uid else {
             return
         }
+         
+         if checkAvalibliaty() == false {
+             print("Sorry Place is full you can reach them by: \(place.number)")
+             return
+         }
 
         do {
             // Add the place as a new document in the bookmarks collection
@@ -116,6 +121,10 @@ class UserOprtionViewModel: ObservableObject {
         } catch {
             print("DEBUG: error while adding to resrvations list \(error.localizedDescription)")
         }
+    }
+    
+    func checkAvalibliaty() -> Bool {
+        return true
     }
     func fetchResrvations() {
         guard let userID = UserService.shared.auth.currentUser?.uid else { return }

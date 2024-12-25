@@ -49,5 +49,17 @@ class AuthViewModel: ObservableObject {
         }
         
     }
+    
+    
+    @MainActor
+    func logOut() async throws {
+        do {
+            try UserService.shared.auth.signOut()
+        } catch {
+            throw AuthError.customError(message: "Failed to log out: \(error.localizedDescription)")
+        }
+    }
+
+    
 
 }

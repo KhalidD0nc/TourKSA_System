@@ -10,7 +10,9 @@ import SwiftUI
 
 
 struct ProfileView: View {
-    
+    @StateObject private var authVM = AuthViewModel()
+    @State var isInprogress: Bool = false
+    @State var isLogout: Bool = false
     var body: some View {
         NavigationStack {
             VStack {
@@ -62,21 +64,44 @@ struct ProfileView: View {
                 
                 // Log Out Button
                 Button(action: {
-                    // Log Out action
+                    withAnimation(.spring) {
+                        isInprogress = true
+                        Task {
+                            try await authVM.logOut()
+                            try await Task.sleep(nanoseconds: 3_000_000_000)
+                            isLogout = true
+                        }
+                    }
                 }) {
-                    Text("Log Out")
-                        .font(.ericaOne(size: 20))
-                        .foregroundColor(.white)
-                        .frame(width: UIScreen.main.bounds.width - 40, height: 50)
-                        .background(Color.greenApp)
-                        .cornerRadius(25)
+                    Group {
+                        if isInprogress {
+                            Spinner(lineWidth: 10, height: 30, width: 30)
+                        } else {
+                            Text("Log Out")
+                        }
+                    }
+                    
+                    .foregroundColor(.white)
+                    .font(.ericaOne(size: 24))
+                    .padding()
+                    .frame(width: isInprogress ? 80 : 340)
+                    .background(Color.red)
+                    .cornerRadius(40)
+                }
+                .padding(.bottom, 10)
+                
                 }
                 .padding(.bottom, 40)
+            
+            
+                .fullScreenCover(isPresented: $isLogout) {
+                    OnboardingView()
+                }
             }
             .background(Color.white.ignoresSafeArea())
         }
     }
-}
+
 
 // Helper view for profile menu items
 struct ProfileMenuItem: View {
