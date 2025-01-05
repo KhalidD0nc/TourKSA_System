@@ -52,7 +52,6 @@
 		ADE8D69E2C8F54140037A2C5 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D69D2C8F54140037A2C5 /* FirebaseRemoteConfig */; };
 		ADE8D6A02C8F54140037A2C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D69F2C8F54140037A2C5 /* FirebaseStorage */; };
 		ADE8D6A22C8F54140037A2C5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D6A12C8F54140037A2C5 /* FirebaseStorageCombine-Community */; };
-		ADE8D6A42C8F54140037A2C5 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = ADE8D6A32C8F54140037A2C5 /* FirebaseVertexAI-Preview */; };
 		ADE8D6A62C8F54320037A2C5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8D6A52C8F54320037A2C5 /* UserModel.swift */; };
 		ADE8D6A92C8F59AA0037A2C5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8D6A82C8F59AA0037A2C5 /* OnboardingView.swift */; };
 		ADE8D6AB2C8F5AA80037A2C5 /* EricaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADE8D6AA2C8F5AA80037A2C5 /* EricaOne-Regular.ttf */; };
@@ -67,7 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD39BFD22C8D9DEB00EDFF30 /* SWE_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWE_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD39BFD22C8D9DEB00EDFF30 /* SWE_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SWE_Project.app; path = "/Users/khalidr/Desktop/TourKSA_system/SWE_Project/build/Debug-iphoneos/SWE_Project.app"; sourceTree = "<absolute>"; };
 		AD39BFD52C8D9DEB00EDFF30 /* SWE_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWE_ProjectApp.swift; sourceTree = "<group>"; };
 		AD39BFD92C8D9DED00EDFF30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD39BFDC2C8D9DED00EDFF30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE8D6A42C8F54140037A2C5 /* FirebaseVertexAI-Preview in Frameworks */,
 				ADE8D6842C8F54140037A2C5 /* FirebaseAppCheck in Frameworks */,
 				ADE8D6882C8F54140037A2C5 /* FirebaseAuth in Frameworks */,
 				ADE8D6962C8F54140037A2C5 /* FirebaseInstallations in Frameworks */,
@@ -144,17 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				AD39BFD42C8D9DEB00EDFF30 /* SWE_Project */,
-				AD39BFD32C8D9DEB00EDFF30 /* Products */,
 				ADF8348C2D2A94B4006EE959 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		AD39BFD32C8D9DEB00EDFF30 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD39BFD22C8D9DEB00EDFF30 /* SWE_Project.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AD39BFD42C8D9DEB00EDFF30 /* SWE_Project */ = {
@@ -199,17 +188,9 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		AD99A4B32CA043F300DDB640 /* Save */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Save;
-			sourceTree = "<group>";
-		};
 		AD99A4B42CA043F700DDB640 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				AD99A4DE2CAD1A4700DDB640 /* ViewModel */,
 				AD99A4DD2CAD1A4300DDB640 /* View */,
 			);
 			path = Map;
@@ -218,7 +199,6 @@
 		AD99A4B52CA043FA00DDB640 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				AD99A4EF2CAE8EEE00DDB640 /* ViewModel */,
 				AD99A4EE2CAE8EEA00DDB640 /* View */,
 			);
 			path = Settings;
@@ -246,7 +226,6 @@
 		AD99A4BF2CA062D900DDB640 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				AD99A4C12CA062E500DDB640 /* View */,
 				AD99A4BB2CA05D3600DDB640 /* ContainerView.swift */,
 				AD99A4C02CA062DF00DDB640 /* ViewModel */,
 			);
@@ -261,26 +240,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		AD99A4C12CA062E500DDB640 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		AD99A4DD2CAD1A4300DDB640 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				AD99A4DF2CAD1A5200DDB640 /* MapView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AD99A4DE2CAD1A4700DDB640 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AD99A4E32CAD32C500DDB640 /* Journey */ = {
@@ -310,13 +275,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AD99A4EF2CAE8EEE00DDB640 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		ADE8D6A72C8F59980037A2C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +292,6 @@
 				AD99A4BF2CA062D900DDB640 /* Container */,
 				AD99A4B52CA043FA00DDB640 /* Settings */,
 				AD99A4B42CA043F700DDB640 /* Map */,
-				AD99A4B32CA043F300DDB640 /* Save */,
 				AD99A4B22CA043E500DDB640 /* Home */,
 				AD6EBFC42C91DE6800390F71 /* Component */,
 				ADE8D6B02C8F66980037A2C5 /* Onboarding */,
@@ -445,7 +402,6 @@
 				ADE8D69D2C8F54140037A2C5 /* FirebaseRemoteConfig */,
 				ADE8D69F2C8F54140037A2C5 /* FirebaseStorage */,
 				ADE8D6A12C8F54140037A2C5 /* FirebaseStorageCombine-Community */,
-				ADE8D6A32C8F54140037A2C5 /* FirebaseVertexAI-Preview */,
 			);
 			productName = SWE_Project;
 			productReference = AD39BFD22C8D9DEB00EDFF30 /* SWE_Project.app */;
@@ -478,7 +434,7 @@
 			packageReferences = (
 				ADE8D67C2C8F54130037A2C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = AD39BFD32C8D9DEB00EDFF30 /* Products */;
+			productRefGroup = AD39BFC92C8D9DEB00EDFF30;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -860,11 +816,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ADE8D67C2C8F54130037A2C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
-		};
-		ADE8D6A32C8F54140037A2C5 /* FirebaseVertexAI-Preview */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADE8D67C2C8F54130037A2C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseVertexAI-Preview";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
