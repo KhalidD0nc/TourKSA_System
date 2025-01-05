@@ -19,32 +19,41 @@ class UserService: ObservableObject  {
     
     let auth: Auth
     let firestore: Firestore
-    
+    let reliabilityDB: CollectionReference // Add this
     
 
     init() {
         self.auth = Auth.auth()
         self.firestore = Firestore.firestore()
-    
+        self.reliabilityDB = firestore.collection("reliability_metrics")
+
     }
 
 
     
-    func fetchUser() async throws{
-        guard let userID = auth.currentUser?.uid else {throw URLError(.badURL)}
+    func fetchUser() async throws {
+        guard let userID = auth.currentUser?.uid else {
+            ReliabilityService.shared.recordRequest(success: false)
+            throw URLError(.badURL)
+        }
+        
         let docRef = firestore.collection("Users").document(userID)
         
-        let docSnap = try await docRef.getDocument()
-     
+        do {
+            let docSnap = try await docRef.getDocument()
             guard let user = try? docSnap.data(as: UserModel.self) else {
+                ReliabilityService.shared.recordRequest(success: false)
                 throw URLError(.badURL)
             }
-        DispatchQueue.main.async {
-            self.user = user
+            DispatchQueue.main.async {
+                self.user = user
+            }
+            ReliabilityService.shared.recordRequest(success: true)
+        } catch {
+            ReliabilityService.shared.recordRequest(success: false)
+            throw error
         }
-       
     }
-
     
 
     

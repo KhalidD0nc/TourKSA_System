@@ -62,6 +62,8 @@
 		ADE8D6B72C8F67700037A2C5 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8D6B52C8F67700037A2C5 /* AuthViewModel.swift */; };
 		ADE8D6B82C8F67700037A2C5 /* UserService .swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8D6B62C8F67700037A2C5 /* UserService .swift */; };
 		ADE8D6BA2C8F67E50037A2C5 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8D6B92C8F67E50037A2C5 /* AuthError.swift */; };
+		ADF8348B2D2A8F27006EE959 /* ReliabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8348A2D2A8F27006EE959 /* ReliabilityService.swift */; };
+		ADF8348F2D2A9A5C006EE959 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF8348D2D2A94B4006EE959 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		ADE8D6B52C8F67700037A2C5 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		ADE8D6B62C8F67700037A2C5 /* UserService .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserService .swift"; sourceTree = "<group>"; };
 		ADE8D6B92C8F67E50037A2C5 /* AuthError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		ADF8348A2D2A8F27006EE959 /* ReliabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityService.swift; sourceTree = "<group>"; };
+		ADF8348D2D2A94B4006EE959 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 				ADE8D69A2C8F54140037A2C5 /* FirebaseMessaging in Frameworks */,
 				ADE8D6942C8F54140037A2C5 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				ADE8D6982C8F54140037A2C5 /* FirebaseMLModelDownloader in Frameworks */,
+				ADF8348F2D2A9A5C006EE959 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +145,7 @@
 			children = (
 				AD39BFD42C8D9DEB00EDFF30 /* SWE_Project */,
 				AD39BFD32C8D9DEB00EDFF30 /* Products */,
+				ADF8348C2D2A94B4006EE959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,6 +376,7 @@
 				ADE8D6B62C8F67700037A2C5 /* UserService .swift */,
 				AD99A4C62CA17B1300DDB640 /* WeatherService.swift */,
 				AD99A4D42CA81DE300DDB640 /* PlaceService.swift */,
+				ADF8348A2D2A8F27006EE959 /* ReliabilityService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -392,6 +399,14 @@
 				AD99A4BD2CA0614A00DDB640 /* Color.swift */,
 			);
 			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		ADF8348C2D2A94B4006EE959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8348D2D2A94B4006EE959 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +532,7 @@
 				AD99A4E82CAD337400DDB640 /* JourneyCardView.swift in Sources */,
 				AD99A4E62CAD331C00DDB640 /* PlanSelectionView.swift in Sources */,
 				AD99A4BC2CA05D3700DDB640 /* ContainerView.swift in Sources */,
+				ADF8348B2D2A8F27006EE959 /* ReliabilityService.swift in Sources */,
 				ADE8D6A62C8F54320037A2C5 /* UserModel.swift in Sources */,
 				AD99A4C72CA17B1300DDB640 /* WeatherService.swift in Sources */,
 				AD99A4C52CA17B0000DDB640 /* WeatherModel.swift in Sources */,
